@@ -1,0 +1,77 @@
+.bold {
+    font-weight: 900;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+.header {
+    background-image: url(src\assets\buildings.jpg);
+    background-position: 0px -205px;
+    background-size: cover;
+    height: 7em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1117px;
+}
+
+.search-section {
+    background-color: white;
+    padding: 3px;
+    border-radius: 3px;
+    height: 2.5em;
+    display: flex;
+}
+
+.search-section input {
+    border: none;
+    width: 48em;
+    height: 2.8em;
+}
+
+.search-section input:focus {
+    outline: none;
+}
+
+.search-section input::placeholder {
+    color: #B9BDCF;
+}
+
+.material-icons {
+    margin: 0 3px;
+    font-size: 20px;
+    color: #B9BDCF;
+}
+
+.search-btn {
+    border: none;
+    background-color: #1E86FF;
+    color: white;
+    border-radius: 3px;
+    width: 115px;
+}
+
+.search-btn:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        background-position: 0px -275px;
+    }
+
+    .search-section {
+        width: 300px;
+    }
+
+    .search-section div:first-of-type {
+        width: 230px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+}

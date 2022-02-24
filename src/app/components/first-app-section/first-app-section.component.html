@@ -1,0 +1,16 @@
+<h1><b class="bold">Job Search</b> App</h1>
+<div class="header">
+    <form class="search-section" (submit)="searchOffers($event)">
+        <div style="display: flex; align-items: center; justify-content: center">
+            <span class="material-icons">
+                work_outline
+            </span>
+            <input type="text" placeholder="Title, companies, expertise">
+        </div>
+        <button class="search-btn" type="submit">Search</button>
+    </form>
+</div>
+<section style="display: flex">
+    <app-job-filter></app-job-filter>
+    <app-jobs-found></app-jobs-found>
+</section>

@@ -1,0 +1,43 @@
+<section class="jobFilter-section">
+    <div>
+        <input type="checkbox" name="job_type" value="full_time" (input)="filter($event)"> Full Time
+    </div>
+    <h4>LOCATION</h4>
+    <div class="input-location">
+        <span class="material-icons">
+            public
+        </span>
+        <input type="text" name="text-location" id="" placeholder="City, state or country" (input)="filter($event)">
+    </div>
+    <div>
+        <label for="Anywhere">
+            <input type="radio" name="location" value="Anywhere" checked (click)="filter($event)">
+            Anywhere
+        </label> 
+    </div>
+    <div>
+        <label for="Europe">
+            <input type="radio" name="location" value="Europe|European|EMEA" (click)="filter($event)">
+            Europe
+        </label>
+    </div>
+    <div>
+        <label for="USA">
+            <input type="radio" name="location" value="USA|America|US" (click)="filter($event)">
+            USA
+        </label>
+    </div>
+    <div>
+        <label for="UK">
+            <input type="radio" name="location" value="UK" (click)="filter($event)">
+            UK
+        </label>
+    </div>
+    <div>
+        <label for="Canada">
+            <input type="radio" name="location" value="Canada" (click)="filter($event)">
+            Canada
+        </label>
+    </div>
+</section>
+

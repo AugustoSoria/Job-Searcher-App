@@ -1,0 +1,41 @@
+<section class="jobsSection" *ngIf="filteredJobs.length > 0; else NotFound">
+    <div *ngFor="let job of filteredJobs | pagination:pages">
+        <a [routerLink]="job.id | json">
+            <div class="jobSection">
+                <div class="company_logo">
+                    <img [src]="job.company_logo_url ?? '../../assets/Js.png'">
+                </div>
+                <div class="jobRequirementSection">
+                    <div class="requirementLeft">
+                        <p class="company_name">{{job.company_name}}</p>
+                        <h3 class="title">{{job.title}}</h3>
+                        <p class="job_type">{{job.job_type}}</p>
+                    </div>
+                    <div class="requirementRight">
+                        <p>
+                            <span class="material-icons">
+                            public
+                            </span>
+                            {{job.candidate_required_location}}
+                        </p>
+                        <p>
+                            <span class="material-icons">
+                                query_builder
+                            </span>
+                            {{formaterDate(job.publication_date)}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="pag-section">
+        <button (click)="prevPage()" [disabled]="pages === 0">&#60;</button> 
+        <button (click)="nextPage()" [disabled]="(filteredJobs | pagination:pages).length === 0">&#62;</button>
+    </div>
+</section>
+<ng-template #NotFound>
+    <div style="margin: 10em 15em;">
+        <h2>Job offers not found</h2>
+    </div>
+</ng-template>

@@ -1,0 +1,120 @@
+.jobSection {
+    display: flex;
+    margin-bottom: 2em;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1px 1px 3px #B9BDCF;
+    background-color: white;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pag-section {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1em 0;
+}
+
+.pag-section button{
+    border: 2px solid #B9BDCF;
+    margin: 0 0.5em;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    color: #B9BDCF;
+    font-weight: 900;
+}
+
+.jobRequirementSection {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 1em;
+}
+
+.requirementLeft {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #334680;
+}
+
+.requirementRight {
+    display: flex;
+    align-items: flex-end;
+    color: #B9BDCF
+}
+
+.material-icons {
+    margin-right: 3px;
+    font-size: 20px;
+}
+
+.requirementRight p {
+    display: flex;
+    align-items: flex-end;
+}
+
+.requirementRight p:last-of-type {
+    margin-left: 1em;
+}
+
+.company_name {
+    font-weight: bold;
+}
+
+.job_type {
+    border: 1px solid;
+    border-radius: 3px;
+    width: 80px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.company_name, .job_type {
+    margin: 0;
+}
+
+.jobsSection {
+    width: 50em;
+    margin: 2em;
+}
+
+.company_logo {
+    border-radius: 3px;
+    height: 128px;
+    width: 128px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+    .jobsSection {
+        margin: 2em 0;
+        width: 350px;
+    }
+
+    .jobSection {
+        width: 320px;
+    }
+
+    .company_logo {
+        height: 100px;
+        width: 115px;
+    }
+
+    .company_logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .jobRequirementSection {
+        flex-direction: column;
+    }
+}

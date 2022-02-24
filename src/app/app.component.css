@@ -1,0 +1,41 @@
+.bold {
+    font-weight: 900;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+.header {
+    background-color: coral;
+    height: 7em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-section {
+    background-color: white;
+    padding: 3px;
+    border-radius: 3px;
+    height: 2.2em;
+    display: flex;
+}
+
+.search-section input {
+    border: none;
+    width: 48em;
+}
+
+.search-btn {
+    border: none;
+    background-color: #1E86FF;
+    color: white;
+    border-radius: 3px;
+    width: 100px;
+}
+
+.jobsBody {
+    display: flex;
+}

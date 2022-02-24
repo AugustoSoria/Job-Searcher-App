@@ -1,0 +1,44 @@
+.jobFilter-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5em;
+    font-weight: bold;
+    color: #334680;
+}
+
+.jobFilter-section h4 {
+    color: #B9BDCF;
+}
+
+.jobFilter-section .input-location {
+    box-shadow: 1px 1px 3px #B9BDCF;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.input-location input {
+    height: 35px;
+    width: 250px;
+    border: none;
+    border-radius: 3px;
+}
+
+.input-location input::placeholder {
+    color: #B9BDCF;
+}
+
+.material-icons {
+    margin: 0px 6px;
+    font-size: 20px;
+    color: #B9BDCF
+}
+
+.jobFilter-section input[type="checkbox"] {
+    margin-bottom: 1em;
+}
+
+.jobFilter-section input[type="radio"] {
+    margin-top: 1.5em;
+}
