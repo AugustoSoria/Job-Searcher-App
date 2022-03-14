@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { OfferModel } from 'src/app/models/offer.interface';
 import { AppState } from 'src/app/state/app.state';
 import { selectListFilteredOffers } from 'src/app/state/selector/offers.selectors';
 

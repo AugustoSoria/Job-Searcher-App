@@ -1,4 +1,4 @@
-<section class="jobsSection" *ngIf="filteredJobs.length > 0; else NotFound">
+<section class="jobsSection" *ngIf="filteredJobs.length > 0 || fetching === false; else NotFound">
     <div *ngFor="let job of filteredJobs | pagination:pages">
         <a [routerLink]="job.id | json">
             <div class="jobSection">
@@ -35,7 +35,12 @@
     </div>
 </section>
 <ng-template #NotFound>
-    <div style="margin: 10em 15em;">
+    <div *ngIf="filteredJobs.length < 0; else fetchingTrue" style="margin: 10em 15em;">
         <h2>Job offers not found</h2>
+    </div>
+</ng-template>
+<ng-template #fetchingTrue>
+    <div *ngIf="fetching === true" style="margin: 10em 15em;">
+        <h2 class="spinner"></h2>
     </div>
 </ng-template>
